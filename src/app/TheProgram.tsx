@@ -8,11 +8,11 @@ import {
   Box,
 } from "@chakra-ui/react";
 
-export const SecondSection = () => {
+export const TheProgram = () => {
   const [isMediumOrSmallThan1024] = useMediaQuery("(max-width: 1024px)");
   return (
     <Flex
-      h={["auto", "auto", "745px"]}
+      // h={["auto", "auto", "745px"]}
       my={["40px", "60px", "80px", "132px"]}
       mx={["auto", "auto", "auto"]}
       w="85%"
@@ -31,8 +31,8 @@ export const SecondSection = () => {
           borderRadius="16px"
           py={["20px", "20px", "66px"]}
           px={["20px", "20px", "54px"]}
-          bg="linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), rgba(18, 18, 18, 0.4)"
-          boxShadow="0px 8px 10px rgb(0 0 0 / 14%), 0px 3px 14px rgb(0 0 0 / 12%), 0px 5px 5px rgb(0 0 0 / 20%)"
+          bg="linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #191A1B"
+          boxShadow="0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2)"
           textAlign="center"
         >
           <Heading

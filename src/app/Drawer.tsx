@@ -1,5 +1,11 @@
 "use client";
-import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
+import {
+  BellIcon,
+  ChevronDownIcon,
+  HamburgerIcon,
+  MoonIcon,
+  SunIcon,
+} from "@chakra-ui/icons";
 import {
   Button,
   Drawer,
@@ -17,11 +23,13 @@ import {
   MenuList,
   Divider,
   Text,
+  useColorMode,
 } from "@chakra-ui/react";
 import Link from "next/link";
 
 export default function DrawerComponent() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { toggleColorMode, colorMode } = useColorMode();
 
   return (
     <>
@@ -42,31 +50,38 @@ export default function DrawerComponent() {
             <Flex direction={"column"}>
               <Link href="/home">
                 <Text
+                  display="flex"
+                  alignItems="center"
                   fontWeight={500}
                   h="12"
-                  fontSize={["18", "18", "24"]}
-                  color="#ffffff"
+                  fontSize="18px"
                 >
                   Home
                 </Text>
               </Link>
 
+              <Divider />
+
               <Link href="/home">
                 <Text
+                  display="flex"
+                  alignItems="center"
                   fontWeight={500}
                   h="12"
-                  fontSize={["18", "18", "24"]}
-                  color="#ffffff"
+                  fontSize="18px"
                 >
                   About
                 </Text>
               </Link>
+              <Divider />
+
               <Menu>
                 <Text
+                  display="flex"
+                  alignItems="center"
                   fontWeight={500}
                   h="12"
-                  fontSize={["18", "18", "24"]}
-                  color="#ffffff"
+                  fontSize="18px"
                 >
                   <MenuButton>
                     Courses <ChevronDownIcon />
@@ -80,24 +95,63 @@ export default function DrawerComponent() {
                     Course 2
                   </MenuItem>
                   <MenuItem as="a" href="#">
-                    Course 2
+                    Course 3
                   </MenuItem>
                   <MenuItem as="a" href="#">
-                    Course 2
+                    Course 4
                   </MenuItem>
                 </MenuList>
               </Menu>
+              <Divider />
 
               <Link href="/contact">
                 <Text
+                  display="flex"
+                  alignItems="center"
                   fontWeight={500}
                   h="12"
-                  fontSize={["18", "18", "24"]}
-                  color="#ffffff"
+                  fontSize="18px"
                 >
                   Contact
                 </Text>
               </Link>
+
+              <Divider />
+
+              <Flex
+                justifyContent={"space-evenly"}
+                alignItems="center"
+                h="48px"
+              >
+                <BellIcon color="#11AD8E" fontSize={22} cursor="pointer" />
+                <Divider colorScheme="#11AD8E" orientation="vertical" h="6" />
+                {colorMode === "light" ? (
+                  <MoonIcon
+                    onClick={toggleColorMode}
+                    color="#11AD8E"
+                    fontSize={20}
+                    cursor="pointer"
+                  />
+                ) : (
+                  <SunIcon
+                    onClick={toggleColorMode}
+                    color="#11AD8E"
+                    fontSize={22}
+                    cursor="pointer"
+                  />
+                )}
+              </Flex>
+              <Divider />
+
+              <Button
+                mx={4}
+                my="4"
+                size="md"
+                bg="#11AD8E"
+                colorScheme="#11AD8E"
+              >
+                Apply Now
+              </Button>
             </Flex>
           </DrawerBody>
         </DrawerContent>

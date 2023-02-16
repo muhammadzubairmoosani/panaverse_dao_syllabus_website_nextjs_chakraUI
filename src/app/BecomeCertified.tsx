@@ -10,7 +10,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 
-export const MainSection = () => {
+export const BecomeCertified = () => {
   const [isMediumOrSmallThan769] = useMediaQuery("(max-width: 769px)");
 
   return (
