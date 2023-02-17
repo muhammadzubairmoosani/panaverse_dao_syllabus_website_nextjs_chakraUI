@@ -1,21 +1,13 @@
-import { BecomeCertified } from "./BecomeCertified";
-import { Footer } from "./Footer";
-import Navigation from "./Navigation";
-import { OprationalCities } from "./OprationalCities";
-import { OutParners } from "./OurPartners";
-import { TheProgram } from "./TheProgram";
-import { WhyToJoin } from "./WhyToJoin";
+// import { HomePage } from "./Home";
+
+import { ContactUs } from "./contacts";
+import { HomePage } from "./Home";
 
 export default function Home() {
   return (
     <>
-      <Navigation />
-      <BecomeCertified />
-      <TheProgram />
-      <WhyToJoin />
-      <OutParners />
-      <OprationalCities />
-      <Footer />
+      {/* <HomePage /> */}
+      <ContactUs />
     </>
   );
 }

@@ -2,31 +2,32 @@
 
 import { BellIcon, ChevronDownIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
-  Flex,
   Button,
+  Divider,
+  Flex,
+  GridItem,
   Image,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
-  Divider,
-  Text,
-  GridItem,
-  Grid,
-  useMediaQuery,
-  useColorMode,
   SimpleGrid,
+  Text,
+  useColorMode,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import DrawerComponent from "./Drawer";
+import { DrawerComponent } from "./Drawer";
+import { useRouter } from "next/router";
 
-export default function Navigation() {
+export const Navigation = () => {
+  const router = useRouter();
   const [isMediumOrSmallThan769] = useMediaQuery("(max-width: 769px)");
   const { toggleColorMode, colorMode } = useColorMode();
 
   return (
     <SimpleGrid
-      position="absolute"
+      position={router.pathname === "/" ? "absolute" : "inherit"}
       w="full"
       zIndex={1}
       bg={
@@ -119,9 +120,11 @@ export default function Navigation() {
                     cursor="pointer"
                   />
                 )}
-                <Button mx={4} size="lg" colorScheme="blue">
-                  Apply Now
-                </Button>
+                <Link href="https://portal.piaic.org/signup" target="_blank">
+                  <Button mx={4} size="lg" colorScheme="blue">
+                    Apply Now
+                  </Button>
+                </Link>
               </Flex>
             </GridItem>
           </>
@@ -129,4 +132,4 @@ export default function Navigation() {
       </Flex>
     </SimpleGrid>
   );
-}
+};

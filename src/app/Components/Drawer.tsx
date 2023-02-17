@@ -27,7 +27,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 
-export default function DrawerComponent() {
+export const DrawerComponent = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { toggleColorMode, colorMode } = useColorMode();
 
@@ -143,19 +143,21 @@ export default function DrawerComponent() {
               </Flex>
               <Divider />
 
-              <Button
-                mx={4}
-                my="4"
-                size="md"
-                bg="#11AD8E"
-                colorScheme="#11AD8E"
-              >
-                Apply Now
-              </Button>
+              <Link href="https://portal.piaic.org/signup" target="_blank">
+                <Button
+                  w="full"
+                  my="4"
+                  size="md"
+                  bg="#11AD8E"
+                  colorScheme="#11AD8E"
+                >
+                  Apply Now
+                </Button>
+              </Link>
             </Flex>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
     </>
   );
-}
+};
