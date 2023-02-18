@@ -2,6 +2,7 @@
 
 import { ChakraProvider } from "@chakra-ui/react";
 import { Navigation, Footer } from "./Components";
+
 export default function RootLayout({
   children,
 }: {

@@ -15,9 +15,7 @@ export const OutParners = () => {
 
   return (
     <Flex
-      // h={["auto", "auto", "auto", "745px"]}
       mt={["40px", "40px", "132px"]}
-      // mb={["40px", "40px", "132px"]}
       mx="auto"
       alignItems="center"
       justifyContent="center"

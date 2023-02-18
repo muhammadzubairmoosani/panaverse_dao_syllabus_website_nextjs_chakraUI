@@ -64,7 +64,7 @@ export const Navigation = () => {
 
                 <Link href="/home">
                   <Text fontWeight={500} mx={4} fontSize="24" color="#ffffff">
-                    About
+                    How It works
                   </Text>
                 </Link>
                 <Menu>
@@ -89,9 +89,9 @@ export const Navigation = () => {
                   </MenuList>
                 </Menu>
 
-                <Link href="/contact">
+                <Link href="/about">
                   <Text fontWeight={500} mx={4} fontSize="24" color="#ffffff">
-                    Contact
+                    About
                   </Text>
                 </Link>
               </Flex>

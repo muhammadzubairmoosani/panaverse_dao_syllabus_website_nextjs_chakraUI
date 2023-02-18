@@ -1,13 +1,7 @@
-// import { HomePage } from "./Home";
-
-import { ContactUs } from "./contacts";
-import { HomePage } from "./Home";
+import { HomePage } from "./home";
+import HowItWorks from "./howItWorks";
 
 export default function Home() {
-  return (
-    <>
-      {/* <HomePage /> */}
-      <ContactUs />
-    </>
-  );
+  // return <HomePage />;
+  return <HowItWorks />;
 }

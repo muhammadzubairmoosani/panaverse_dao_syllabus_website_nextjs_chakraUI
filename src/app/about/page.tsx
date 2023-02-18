@@ -4,7 +4,7 @@ import { LinkIcon } from "@chakra-ui/icons";
 import { Avatar, Box, Divider, Flex, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
-export const ContactUs = () => {
+export default async function About() {
   return (
     <Flex direction="column" maxW="90%" mx="auto">
       <Flex
@@ -141,4 +141,4 @@ export const ContactUs = () => {
       </Flex>
     </Flex>
   );
-};
+}
