@@ -18,16 +18,16 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { DrawerComponent } from "./Drawer";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 export const Navigation = () => {
-  const router = useRouter();
+  // const router = useRouter();
   const [isMediumOrSmallThan769] = useMediaQuery("(max-width: 769px)");
   const { toggleColorMode, colorMode } = useColorMode();
 
   return (
     <SimpleGrid
-      position={router.pathname === "/" ? "absolute" : "inherit"}
+      position={"absolute"}
       w="full"
       zIndex={1}
       bg={

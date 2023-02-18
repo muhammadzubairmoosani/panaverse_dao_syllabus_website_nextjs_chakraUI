@@ -1,24 +1,16 @@
 "use client";
 
 import { LinkIcon } from "@chakra-ui/icons";
-import {
-  Avatar,
-  Box,
-  Flex,
-  Heading,
-  Spacer,
-  Wrap,
-  WrapItem,
-  Text,
-} from "@chakra-ui/react";
+import { Avatar, Box, Divider, Flex, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
 export const ContactUs = () => {
   return (
     <Flex direction="column" maxW="90%" mx="auto">
       <Flex
-        //   py="10rem"
+        my="20"
         flexGrow="3"
+        direction={["column", "column", "column", "row"]}
       >
         <Box textAlign="center" flex="1">
           <Avatar
@@ -88,10 +80,16 @@ export const ContactUs = () => {
           </Text>
         </Box>
       </Flex>
-
+      <Divider />
       <Flex
-        //   py="10rem"
+        my="20"
         flexGrow="3"
+        direction={[
+          "column-reverse",
+          "column-reverse",
+          "column-reverse",
+          "row",
+        ]}
       >
         <Box flex="2">
           <Text fontSize="larger">
