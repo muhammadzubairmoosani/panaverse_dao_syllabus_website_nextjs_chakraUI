@@ -8,22 +8,22 @@ import {
 } from "@chakra-ui/icons";
 import {
   Button,
+  Divider,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
-  IconButton,
-  useDisclosure,
   Flex,
+  IconButton,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
-  Divider,
   Text,
   useColorMode,
+  useDisclosure,
 } from "@chakra-ui/react";
 import Link from "next/link";
 
@@ -75,7 +75,7 @@ export const DrawerComponent = () => {
               </Link>
               <Divider />
 
-              <Menu>
+              <Link href="/available-programs">
                 <Text
                   display="flex"
                   alignItems="center"
@@ -83,25 +83,10 @@ export const DrawerComponent = () => {
                   h="12"
                   fontSize="18px"
                 >
-                  <MenuButton>
-                    Courses <ChevronDownIcon />
-                  </MenuButton>
+                  Available Programs
                 </Text>
-                <MenuList>
-                  <MenuItem as="a" href="#">
-                    Course 1
-                  </MenuItem>
-                  <MenuItem as="a" href="#">
-                    Course 2
-                  </MenuItem>
-                  <MenuItem as="a" href="#">
-                    Course 3
-                  </MenuItem>
-                  <MenuItem as="a" href="#">
-                    Course 4
-                  </MenuItem>
-                </MenuList>
-              </Menu>
+              </Link>
+
               <Divider />
 
               <Link href="/contact">

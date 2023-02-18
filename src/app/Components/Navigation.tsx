@@ -1,16 +1,12 @@
 "use client";
 
-import { BellIcon, ChevronDownIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { BellIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
   Button,
   Divider,
   Flex,
   GridItem,
   Image,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
   SimpleGrid,
   Text,
   useColorMode,
@@ -41,7 +37,9 @@ export const Navigation = () => {
     >
       <Flex justifyContent="space-between">
         <Flex justifyContent="center" mx={4} h="full" alignItems="center">
-          <Image w={["24", "24", "28"]} src="logo.png" alt="Logo" />
+          <Link href="/">
+            <Image w={["24", "24", "28"]} src="logo.png" alt="Logo" />
+          </Link>
         </Flex>
 
         {isMediumOrSmallThan769 ? (
@@ -57,40 +55,19 @@ export const Navigation = () => {
                 alignItems="center"
               >
                 <Link href="/home">
-                  <Text fontWeight={500} mx={4} fontSize="24" color="#ffffff">
-                    Home
-                  </Text>
-                </Link>
-
-                <Link href="/home">
-                  <Text fontWeight={500} mx={4} fontSize="24" color="#ffffff">
+                  <Text fontWeight={500} mx={4} fontSize={20} color="#ffffff">
                     How It works
                   </Text>
                 </Link>
-                <Menu>
-                  <Text fontWeight={500} mx={4} fontSize="24" color="#ffffff">
-                    <MenuButton>
-                      Courses <ChevronDownIcon />
-                    </MenuButton>
+
+                <Link href="/available-programs">
+                  <Text fontWeight={500} mx={4} fontSize={20} color="#ffffff">
+                    Available Programs
                   </Text>
-                  <MenuList>
-                    <MenuItem as="a" href="#">
-                      Course 1
-                    </MenuItem>
-                    <MenuItem as="a" href="#">
-                      Course 2
-                    </MenuItem>
-                    <MenuItem as="a" href="#">
-                      Course 2
-                    </MenuItem>
-                    <MenuItem as="a" href="#">
-                      Course 2
-                    </MenuItem>
-                  </MenuList>
-                </Menu>
+                </Link>
 
                 <Link href="/about">
-                  <Text fontWeight={500} mx={4} fontSize="24" color="#ffffff">
+                  <Text fontWeight={500} mx={4} fontSize={20} color="#ffffff">
                     About
                   </Text>
                 </Link>
@@ -121,7 +98,7 @@ export const Navigation = () => {
                   />
                 )}
                 <Link href="https://portal.piaic.org/signup" target="_blank">
-                  <Button mx={4} size="lg" colorScheme="blue">
+                  <Button mx={4} size="md" bg="#11AD8E" colorScheme="#11AD8E">
                     Apply Now
                   </Button>
                 </Link>
