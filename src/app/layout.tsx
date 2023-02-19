@@ -1,7 +1,7 @@
 "use client";
 
 import { ChakraProvider } from "@chakra-ui/react";
-import { Navigation, Footer } from "./Components";
+import { Footer, Navigation } from "./Components";
 
 export default function RootLayout({
   children,
@@ -21,5 +21,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// export default withChakra(MyApp);

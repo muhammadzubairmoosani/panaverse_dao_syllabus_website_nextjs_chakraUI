@@ -37,7 +37,7 @@ export default function HowItWorks() {
   const [isMediumOrSmallThan768] = useMediaQuery("(max-width: 768px)");
 
   return (
-    <Card pt="32">
+    <Card pt="32" pb="20">
       <CardHeader>
         <Heading
           size={["lg", "lg", "2xl"]}

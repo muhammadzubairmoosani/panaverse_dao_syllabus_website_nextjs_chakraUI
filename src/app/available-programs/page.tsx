@@ -26,7 +26,7 @@ export default function AvailablePrograms() {
   const [toggle5, setToggle5] = useState(false);
 
   return (
-    <Box pt="32" m="0 auto" maxW="90%">
+    <Box pt="32" pb="20" m="0 auto" maxW="90%">
       <Heading
         mt="8"
         mb="16"

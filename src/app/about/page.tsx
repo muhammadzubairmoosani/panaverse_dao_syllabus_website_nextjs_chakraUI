@@ -118,8 +118,8 @@ export default function About() {
             Thinking concepts and methodologies. Excellent communicator, mentor,
             instructor, and coach.
             <br /> <br />
-            Received Microsoft's Most Valuable Professional (MVP) awards for
-            eight consecutive years in client and cloud technologies.
+            Received Microsoft&apos;s Most Valuable Professional (MVP) awards
+            for eight consecutive years in client and cloud technologies.
           </Text>
         </Box>
 
