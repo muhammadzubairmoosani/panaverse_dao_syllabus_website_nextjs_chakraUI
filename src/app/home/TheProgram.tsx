@@ -1,11 +1,11 @@
 "use client";
 import {
-  Heading,
-  Text,
-  Image,
-  Flex,
-  useMediaQuery,
   Box,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 export const TheProgram = () => {

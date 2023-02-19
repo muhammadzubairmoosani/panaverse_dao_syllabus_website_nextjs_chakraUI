@@ -8,14 +8,12 @@ import {
   Image,
   Input,
   Text,
-  useColorMode,
 } from "@chakra-ui/react";
 import Link from "next/link";
 
 export const Footer = () => {
-  const { colorMode } = useColorMode();
   return (
-    <Box bgImage={colorMode === "light" ? "footer_bg.png" : ""} bgSize="cover">
+    <Box bgImage="footer_bg.png" bgSize="cover">
       <Flex
         justifyContent="center"
         alignItems="center"
@@ -53,7 +51,7 @@ export const Footer = () => {
             </Text>
           </Box>
           <Box mx="4" my={["4", "4", "auto"]} w={["full", "45%", "auto"]}>
-            <Link href="/home">
+            <Link href="/">
               <Text
                 fontWeight={400}
                 fontSize={["18px", "18px", "22px"]}
@@ -64,7 +62,27 @@ export const Footer = () => {
               </Text>
             </Link>
 
-            <Link href="/home">
+            <Link href="/how-it-works">
+              <Text
+                fontWeight={400}
+                fontSize={["18px", "18px", "22px"]}
+                color="white"
+                mb="20px"
+              >
+                How it Works
+              </Text>
+            </Link>
+            <Link href="/available-programs">
+              <Text
+                fontWeight={400}
+                fontSize={["18px", "18px", "22px"]}
+                color="white"
+                mb="20px"
+              >
+                Available Programs
+              </Text>
+            </Link>
+            <Link href="/about">
               <Text
                 fontWeight={400}
                 fontSize={["18px", "18px", "22px"]}
@@ -72,25 +90,6 @@ export const Footer = () => {
                 mb="20px"
               >
                 About
-              </Text>
-            </Link>
-            <Link href="/home">
-              <Text
-                fontWeight={400}
-                fontSize={["18px", "18px", "22px"]}
-                color="white"
-                mb="20px"
-              >
-                Caurses
-              </Text>
-            </Link>
-            <Link href="/home">
-              <Text
-                fontWeight={400}
-                fontSize={["18px", "18px", "22px"]}
-                color="white"
-              >
-                Contact
               </Text>
             </Link>
           </Box>

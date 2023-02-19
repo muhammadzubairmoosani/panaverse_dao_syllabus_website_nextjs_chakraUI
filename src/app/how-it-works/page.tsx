@@ -19,6 +19,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import { Fragment } from "react";
 
 export default function HowItWorks() {
   const process = [
@@ -36,7 +37,7 @@ export default function HowItWorks() {
   const [isMediumOrSmallThan768] = useMediaQuery("(max-width: 768px)");
 
   return (
-    <Card>
+    <Card pt="32">
       <CardHeader>
         <Heading
           size={["lg", "lg", "2xl"]}
@@ -83,7 +84,7 @@ export default function HowItWorks() {
                       City by City Roadmap
                     </Heading>
                     {roadMap.map((text) => (
-                      <ListItem fontSize={[16, 16, 20]}>
+                      <ListItem key={text} fontSize={[16, 16, 20]}>
                         <ListIcon as={CheckCircleIcon} color="green.500" />
                         {text}
                       </ListItem>
@@ -112,7 +113,7 @@ export default function HowItWorks() {
                 <Divider />
                 <OrderedList my="4" spacing={3}>
                   {process.map((text, index) => (
-                    <>
+                    <Fragment key={text}>
                       <ListItem fontSize={[16, 16, 20]}>{text}</ListItem>
                       {!index ? (
                         <Link
@@ -130,7 +131,7 @@ export default function HowItWorks() {
                       ) : (
                         ""
                       )}
-                    </>
+                    </Fragment>
                   ))}
                 </OrderedList>
               </Flex>

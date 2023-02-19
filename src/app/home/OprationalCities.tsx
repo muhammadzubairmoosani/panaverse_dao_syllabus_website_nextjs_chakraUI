@@ -1,12 +1,5 @@
 "use client";
-import {
-  Heading,
-  Text,
-  Image,
-  Flex,
-  Box,
-  useMediaQuery,
-} from "@chakra-ui/react";
+import { Flex, Heading, Image, Text, useMediaQuery } from "@chakra-ui/react";
 
 export const OprationalCities = () => {
   const [isMediumOrSmallThan1440] = useMediaQuery("(max-width: 1440px)");

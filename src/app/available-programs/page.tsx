@@ -26,9 +26,10 @@ export default function AvailablePrograms() {
   const [toggle5, setToggle5] = useState(false);
 
   return (
-    <Box py="10rem" m="0 auto" maxW="90%">
+    <Box pt="32" m="0 auto" maxW="90%">
       <Heading
-        my="8"
+        mt="8"
+        mb="16"
         size={["lg", "lg", "2xl"]}
         color="green.500"
         textAlign="center"

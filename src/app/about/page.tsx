@@ -4,11 +4,11 @@ import { LinkIcon } from "@chakra-ui/icons";
 import { Avatar, Box, Divider, Flex, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
-export default async function About() {
+export default function About() {
   return (
-    <Flex direction="column" maxW="90%" mx="auto">
+    <Flex pt="32" direction="column" maxW="90%" mx="auto">
       <Flex
-        my="20"
+        my="12"
         flexGrow="3"
         direction={["column", "column", "column", "row"]}
       >
@@ -19,7 +19,7 @@ export default async function About() {
             name="Dr arif alvi"
             src="dr_arif_alvi.jpeg"
           />
-          <Text my="3" fontSize={"3xl"}>
+          <Text my="3" fontSize={["2xl", "2xl", "3xl"]}>
             Dr. Arif Alvi
           </Text>
           <Text>President of the Islamic Republic of Pakistan</Text>
@@ -28,7 +28,7 @@ export default async function About() {
           </Link>
         </Box>
         <Box flex="2">
-          <Text fontSize="larger">
+          <Text fontSize={["md", "md", "larger"]}>
             Dr. Arif Alvi was sworn in as the 13th President of Islamic Republic
             of Pakistan on 9th September 2018.
             <br /> <br />
@@ -82,7 +82,7 @@ export default async function About() {
       </Flex>
       <Divider />
       <Flex
-        my="20"
+        my="12"
         flexGrow="3"
         direction={[
           "column-reverse",
@@ -92,7 +92,7 @@ export default async function About() {
         ]}
       >
         <Box flex="2">
-          <Text fontSize="larger">
+          <Text fontSize={["md", "md", "larger"]}>
             CEO of Panacloud, the world’s first Integrated API Ownership
             Economy, Crowdfunding, and Development Platform. Volunteer COO of
             PIAIC, an initiative by the President of Pakistan for AI and
@@ -130,7 +130,7 @@ export default async function About() {
             name="Sir Zia Khan"
             src="sir_zia_khan.jpeg"
           />
-          <Text my="3" fontSize={"3xl"}>
+          <Text my="3" fontSize={["2xl", "2xl", "3xl"]}>
             Sir. Zia Khan
           </Text>
           <Text>CEO of Panacloud</Text>

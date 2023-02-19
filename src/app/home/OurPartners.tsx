@@ -1,5 +1,5 @@
 "use client";
-import { Heading, Image, Flex, Box, useMediaQuery } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, useMediaQuery } from "@chakra-ui/react";
 
 export const OutParners = () => {
   const [isMediumOrSmallThan768] = useMediaQuery("(max-width: 768px)");

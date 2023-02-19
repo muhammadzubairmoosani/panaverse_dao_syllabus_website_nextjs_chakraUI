@@ -1,5 +1,5 @@
 "use client";
-import { Heading, Text, Image, Flex } from "@chakra-ui/react";
+import { Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 export const WhyToJoin = () => {
   const context = [

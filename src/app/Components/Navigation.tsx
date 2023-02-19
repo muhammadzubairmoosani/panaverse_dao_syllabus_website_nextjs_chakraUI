@@ -14,16 +14,14 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { DrawerComponent } from "./Drawer";
-// import { useRouter } from "next/router";
 
 export const Navigation = () => {
-  // const router = useRouter();
-  const [isMediumOrSmallThan769] = useMediaQuery("(max-width: 769px)");
   const { toggleColorMode, colorMode } = useColorMode();
+  const [isMediumOrSmallThan769] = useMediaQuery("(max-width: 769px)");
 
   return (
     <SimpleGrid
-      position={"absolute"}
+      position="absolute"
       w="full"
       zIndex={1}
       bg={
@@ -54,7 +52,7 @@ export const Navigation = () => {
                 h="full"
                 alignItems="center"
               >
-                <Link href="/home">
+                <Link href="/how-it-works">
                   <Text fontWeight={500} mx={4} fontSize={20} color="#ffffff">
                     How It works
                   </Text>

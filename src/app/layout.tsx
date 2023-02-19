@@ -21,3 +21,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+// export default withChakra(MyApp);

@@ -1,11 +1,5 @@
 "use client";
-import {
-  BellIcon,
-  ChevronDownIcon,
-  HamburgerIcon,
-  MoonIcon,
-  SunIcon,
-} from "@chakra-ui/icons";
+import { BellIcon, HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
   Button,
   Divider,
@@ -17,10 +11,6 @@ import {
   DrawerOverlay,
   Flex,
   IconButton,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
   Text,
   useColorMode,
   useDisclosure,
@@ -48,7 +38,7 @@ export const DrawerComponent = () => {
           <Divider />
           <DrawerBody>
             <Flex direction={"column"}>
-              <Link href="/home">
+              <Link href="/how-it-works">
                 <Text
                   display="flex"
                   alignItems="center"
@@ -56,25 +46,10 @@ export const DrawerComponent = () => {
                   h="12"
                   fontSize="18px"
                 >
-                  Home
-                </Text>
-              </Link>
-
-              <Divider />
-
-              <Link href="/home">
-                <Text
-                  display="flex"
-                  alignItems="center"
-                  fontWeight={500}
-                  h="12"
-                  fontSize="18px"
-                >
-                  About
+                  How It Workd
                 </Text>
               </Link>
               <Divider />
-
               <Link href="/available-programs">
                 <Text
                   display="flex"
@@ -86,10 +61,8 @@ export const DrawerComponent = () => {
                   Available Programs
                 </Text>
               </Link>
-
               <Divider />
-
-              <Link href="/contact">
+              <Link href="/about">
                 <Text
                   display="flex"
                   alignItems="center"
@@ -97,12 +70,10 @@ export const DrawerComponent = () => {
                   h="12"
                   fontSize="18px"
                 >
-                  Contact
+                  About
                 </Text>
               </Link>
-
               <Divider />
-
               <Flex
                 justifyContent={"space-evenly"}
                 alignItems="center"
@@ -127,7 +98,6 @@ export const DrawerComponent = () => {
                 )}
               </Flex>
               <Divider />
-
               <Link href="https://portal.piaic.org/signup" target="_blank">
                 <Button
                   w="full"
