@@ -38,7 +38,7 @@ export const DrawerComponent = () => {
           <Divider />
           <DrawerBody>
             <Flex direction={"column"}>
-              <Link href="/how-it-works">
+              <Link href="/how-it-works" onClick={onClose}>
                 <Text
                   display="flex"
                   alignItems="center"
@@ -46,11 +46,11 @@ export const DrawerComponent = () => {
                   h="12"
                   fontSize="18px"
                 >
-                  How It Workd
+                  How It Works
                 </Text>
               </Link>
               <Divider />
-              <Link href="/available-programs">
+              <Link href="/available-programs" onClick={onClose}>
                 <Text
                   display="flex"
                   alignItems="center"
@@ -62,7 +62,7 @@ export const DrawerComponent = () => {
                 </Text>
               </Link>
               <Divider />
-              <Link href="/about">
+              <Link href="/about" onClick={onClose}>
                 <Text
                   display="flex"
                   alignItems="center"

@@ -30,7 +30,7 @@ export const Navigation = () => {
       shadow="0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);"
       templateRows="repeat(1, 1fr)"
       gap={6}
-      py={4}
+      py={[0, 0, 4]}
       px={[0, 0, 8]}
     >
       <Flex justifyContent="space-between">
