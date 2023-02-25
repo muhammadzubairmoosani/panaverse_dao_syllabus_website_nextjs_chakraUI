@@ -4,7 +4,6 @@ import { Box, Flex, Heading, Image, useMediaQuery } from "@chakra-ui/react";
 export const OutParners = () => {
   const [isMediumOrSmallThan768] = useMediaQuery("(max-width: 768px)");
   const context = [
-    { size: "67px", img: "partner1.png" },
     { size: "75px", img: "partner2.png" },
     { size: "183px", img: "partner3.png" },
     { size: "214px", img: "partner4.png" },

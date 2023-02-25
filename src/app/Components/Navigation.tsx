@@ -21,22 +21,24 @@ export const Navigation = () => {
 
   return (
     <SimpleGrid
-      position="absolute"
+      position="sticky"
+      top="0"
       w="full"
+      mb="-82px"
       zIndex={1}
       bg={
-        "linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), rgba(18, 18, 18, 0.4);"
+        "linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), rgba(18, 18, 18, 0.6);"
       }
       shadow="0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);"
       templateRows="repeat(1, 1fr)"
       gap={6}
-      py={[0, 0, 4]}
+      py={[0, 0, 2]}
       px={[0, 0, 8]}
     >
       <Flex justifyContent="space-between">
         <Flex justifyContent="center" mx={4} h="full" alignItems="center">
           <Link href="/">
-            <Image w={["24", "24", "28"]} src="logo.png" alt="Logo" />
+            <Image w={["10", "10", "12"]} src="logo.png" alt="Logo" />
           </Link>
         </Flex>
 
